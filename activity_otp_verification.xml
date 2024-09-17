@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/layout">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="300dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/logo_no_background" />
+
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="350dp"
+        android:id="@+id/cardlayout"
+        app:cardCornerRadius="20dp"
+        android:layout_marginHorizontal="36dp"
+        app:cardElevation="7dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        app:cardBackgroundColor="@color/card">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter OTP"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/Number"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Phone"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/phonr"
+                    android:hint="OTP"
+                    android:inputType="number"
+                    android:padding="12dp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/layout"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Verify OTP"
+                    android:layout_marginBottom="50dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
